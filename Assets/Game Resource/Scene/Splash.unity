@@ -62,7 +62,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3708985, g: 0.3783704, b: 0.35722548, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &9999993
 LightmapSettings:
@@ -370,8 +370,8 @@ Camera:
   m_GameObject: {fileID: 1789880861211678022}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.1921569, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -539,8 +539,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -60}
-  m_SizeDelta: {x: 747.71, y: 1620.44}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 758.41, y: 758.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1789880861211678045
 RectTransform:
@@ -560,7 +560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -541}
+  m_AnchoredPosition: {x: 0, y: -515}
   m_SizeDelta: {x: 447.52, y: 70.089966}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1789880861211678046
@@ -752,37 +752,30 @@ MonoBehaviour:
     price: 0.99
     appStoreID: diamondpack1
     googlePlayID: diamondpack1
-    productType: 0
   - name: diamondpack2
     price: 4.99
     appStoreID: diamondpack2
     googlePlayID: diamondpack2
-    productType: 0
   - name: diamondpack3
     price: 9.99
     appStoreID: diamondpack3
     googlePlayID: diamondpack3
-    productType: 0
   - name: diamondpack4
     price: 24.99
     appStoreID: diamondpack4
     googlePlayID: diamondpack4
-    productType: 0
   - name: diamondpack5
     price: 49.99
     appStoreID: diamondpack5
     googlePlayID: diamondpack5
-    productType: 0
   - name: offlinepack
     price: 3.99
     appStoreID: offlinepack
     googlePlayID: offlinepack
-    productType: 1
   - name: onlinepack
     price: 7.99
     appStoreID: onlinepack
     googlePlayID: onlinepack
-    productType: 1
 --- !u!114 &1789880861211678057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,7 +796,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d3dba3b73b6b35342ba20b246dbb9a22, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3fb6f271342dfcb4caaacbd2d391f01f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
