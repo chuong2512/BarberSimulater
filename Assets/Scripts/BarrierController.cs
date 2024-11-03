@@ -330,12 +330,12 @@ public class BarrierController : MonoBehaviour
 
 	public void ReduceProcess()
 	{
-		if (!QuangCao.Instance.GetRewardAvailable())
-		{
+		/*if (!QuangCao.Instance.GetRewardAvailable())
+		{*/
 			Notification.instance.Warning("No available video at the moment.");
 			Singleton<SoundManager>.Instance.Play("Notification");
 			return;
-		}
+		/*}
 		QuangCao.Instance.PhatQuangCao(() =>
 		{
 			int count = Singleton<GameManager>.Instance.kitchenController.Count;
@@ -351,7 +351,7 @@ public class BarrierController : MonoBehaviour
 				this.ProcessDone();
 			}
 			Tracking.instance.Ads_Impress("reward", "ReduceBarrierProcess");
-		});
+		});*/
 	}
 
 	public void UnlockBarrierWithDiamond()

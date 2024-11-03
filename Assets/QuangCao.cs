@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using ChuongCustom;
-using GoogleMobileAds.Api;
 using UnityEngine;
 
 public class QuangCao : PersistentSingleton<QuangCao>
@@ -20,16 +19,17 @@ public class QuangCao : PersistentSingleton<QuangCao>
 
     public void Start()
     {
-        MobileAds.Initialize((initStatus) =>
+        /*MobileAds.Initialize((initStatus) =>
         {
             LoadInterstitialAd();
             LoadRewardedAd();
             //  LoadBanner();
-        });
+        });*/
 
         // _bannerView.Show();
     }
 
+    /*
     private AppOpenAd ad;
 
     private bool isShowingAd = false;
@@ -202,7 +202,7 @@ public class QuangCao : PersistentSingleton<QuangCao>
         }
 
         // Create a 320x50 banner at top of the screen
-        _bannerView = new BannerView(BANNER_UNIT_ID, AdSize.SmartBanner, AdPosition.Bottom);
+       // _bannerView = new BannerView(BANNER_UNIT_ID, AdSize.SmartBanner, AdPosition.Bottom);
     }
 
     /// <summary>
@@ -339,5 +339,5 @@ public class QuangCao : PersistentSingleton<QuangCao>
     {
         Debug.LogFormat("Received paid event. (currency: {0}, value: {1}",
             args.AdValue.CurrencyCode, args.AdValue.Value);
-    }
+    }*/
 }

@@ -288,12 +288,12 @@ public class BoostManager : MonoBehaviour
 
     public void WatchAdBoost()
     {
-        if (!QuangCao.Instance.GetRewardAvailable())
-        {
+        /*if (!QuangCao.Instance.GetRewardAvailable())
+        {*/
             Notification.instance.Warning("No available video at the moment.");
             Singleton<SoundManager>.Instance.Play("Notification");
             return;
-        }
+        /*}
 
         if (QuangCao.Instance.GetRewardAvailable())
         {
@@ -310,7 +310,7 @@ public class BoostManager : MonoBehaviour
                 Tracking.instance.Ads_Impress("reward", "BoostIncome");
             });
             Tracking.instance.UI_Interaction("BoostPopup", "WatchAdsBoost");
-        }
+        }*/
 
         /*
 		MyAdvertisement.instance.ShowReward(delegate

@@ -237,12 +237,12 @@ public class GetFreeCoin : MonoBehaviour
 
 	public void WatchAdsFreeCash()
 	{
-		if (!QuangCao.Instance.GetRewardAvailable())
-		{
+		/*if (!QuangCao.Instance.GetRewardAvailable())
+		{*/
 			Notification.instance.Warning("No available video at the moment.");
 			Singleton<SoundManager>.Instance.Play("Notification");
 			return;
-		}
+		/*}
         QuangCao.Instance.PhatQuangCao(() =>
 		{
 			if (this.freeCoinData.watchAds == this.config.freeCash.watchAdLimited)
@@ -259,7 +259,7 @@ public class GetFreeCoin : MonoBehaviour
 			Singleton<SoundManager>.Instance.Play("Rewarded");
 			this.FreeCashValidate();
 			Tracking.instance.Ads_Impress("reward", "GetFreeDiamond");
-		});
+		});*/
 	}
 
 	private IEnumerator Cooldown()
