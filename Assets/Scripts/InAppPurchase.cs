@@ -2,11 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.Purchasing;
-using UnityEngine.Purchasing.Extension;
-using UnityEngine.Purchasing.Security;
 
-public class InAppPurchase : MonoBehaviour, IStoreListener
+public class InAppPurchase : MonoBehaviour
 {
 	[Serializable]
 	public class Products
@@ -19,12 +16,14 @@ public class InAppPurchase : MonoBehaviour, IStoreListener
 
 		public string googlePlayID;
 
-		public ProductType productType;
+	//	public ProductType productType;
 	}
 
+	/*
 	private static IStoreController storeController;
 
 	private static IExtensionProvider storeExtensionProvider;
+	*/
 
 	public static InAppPurchase instance;
 
@@ -47,7 +46,7 @@ public class InAppPurchase : MonoBehaviour, IStoreListener
 		UnityEngine.Object.DontDestroyOnLoad(base.gameObject);
 	}
 
-	private void Start()
+	/*private void Start()
 	{
 		if (InAppPurchase.storeController == null)
 		{
@@ -215,5 +214,5 @@ public class InAppPurchase : MonoBehaviour, IStoreListener
 	private bool IsInitialized()
 	{
 		return InAppPurchase.storeController != null && InAppPurchase.storeExtensionProvider != null;
-	}
+	}*/
 }
