@@ -16,7 +16,6 @@ public class OpenPopupButton : MonoBehaviour
 
     private void OnClickButton()
     {
-        MasterAudioManager.ClickSound();
         if (_screenType == ScreenType.Back)
         {
             ScreenManager.Instance.Back();

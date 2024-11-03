@@ -37,7 +37,7 @@ namespace ChuongCustom
         public virtual void Back()
         {
             ScreenManager.Instance.Back();
-            MasterAudioManager.ClickSound();
+            
         }
 
         /// <summary>

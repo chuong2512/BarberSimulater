@@ -28,14 +28,6 @@
 
         private void PlaySingleSound()
         {
-            if (!_play3DSound)
-            {
-                MasterAudioManager.Play2DSfx(this._sfxName, this._delay);
-            }
-            else
-            {
-                MasterAudioManager.Play3DSfxAtTransform(this._sfxName, this._soundTransform, this._delay);
-            }
         }
     }
 }

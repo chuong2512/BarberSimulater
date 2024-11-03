@@ -27,7 +27,6 @@ namespace ChuongCustom
 
         private void RateGame()
         {
-            MasterAudioManager.ClickSound();
 #if UNITY_ANDROID
             Application.OpenURL(string.Format("market://details?id=" + Application.identifier));
 #elif UNITY_IPHONE

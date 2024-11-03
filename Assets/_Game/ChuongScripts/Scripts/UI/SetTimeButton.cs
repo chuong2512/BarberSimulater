@@ -22,7 +22,6 @@ public class SetTimeButton : MonoBehaviour
 
     private void OnClickButton()
     {
-        MasterAudioManager.ClickSound();
         ScreenManager.Instance.Back();
     }
 

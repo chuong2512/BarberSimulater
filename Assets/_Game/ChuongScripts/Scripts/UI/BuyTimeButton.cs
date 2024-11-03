@@ -59,7 +59,7 @@ public class BuyTimeButton : MonoBehaviour
 
     private void OnClickButton()
     {
-        MasterAudioManager.ClickSound();
+      
         /*switch (_index)
         {
             case 0:

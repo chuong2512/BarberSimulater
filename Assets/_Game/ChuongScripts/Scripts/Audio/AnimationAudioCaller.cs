@@ -40,7 +40,6 @@
                 _timing += Time.deltaTime;
                 if (_timing >= _prepareTime && !_triggered)
                 {
-                    MasterAudioManager.Play2DSfx(audioName);
                     _triggered = true;
 
                     // If no loop, do not update
